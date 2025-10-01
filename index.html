@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tailwind Utility Classes Overview</title>
   <link href="./dist/output.css" rel="stylesheet">
-
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/flexboxes.css">
   <link rel="stylesheet" href="assets/nav.css">
   <link rel="stylesheet" href="assets/typography.css">
-
   <style>
     /* Simple scroll animation */
     .fade-in {
@@ -29,7 +27,6 @@
   <!-- Header Navigation -->
   <header class="w-full shadow p-4 flex items-center justify-between fixed top-0 z-50">
     <a class="px-2 py-2 rounded text-xs " href="index.html">BP HTML 07 Tailwind</a>
-    
     <nav>
       <ul class="flex space-x-4 text-xs">
          <li><a class="px-2 py-2 rounded color-white hover:bg-white  " href="page1.html">Typography</a></li>
@@ -43,31 +40,40 @@
     </nav>
   </header>
 
-  <div class="flex mt-20">
-
+  <div class="flex pt-20 mt-20">
     <!-- Side Navigation -->
     <aside class="hidden md:flex flex-col w-1/3 p-4 sticky top-20 h-screen space-y-2">
-      <a href="#intro" class="px-2 py-2 rounded color-white hover:bg-white  ">Introduction</a>
-      <a href="#fonts" class="px-2 py-2 rounded color-white hover:bg-white  ">Fonts</a>
-      <a href="#colors" class="px-2 py-2 rounded color-white hover:bg-white  ">Colors</a>
-      <a href="#grids" class="px-2 py-2 rounded color-white hover:bg-white  ">Grids</a>
-      <a href="#ui" class="px-2 py-2 rounded color-white hover:bg-white  ">UI Elements</a>
-      <a href="#tables" class="px-2 py-2 rounded color-white hover:bg-white  ">Tables</a>
+      <h3><a href="#tailwind" class="px-2 py-2 rounded color-white hover:bg-white  ">About tailwind</a></h3>
+      <h3><a href="#intro" class="px-2 py-2 rounded color-white hover:bg-white  ">Utility classes</a></h3>
+      <h3><a href="#fonts" class="px-2 py-2 rounded color-white hover:bg-white  ">Fonts</a></h3>
+      <h3><a href="#colors" class="px-2 py-2 rounded color-white hover:bg-white  ">Colors</a></h3>
+      <h3><a href="#grids" class="px-2 py-2 rounded color-white hover:bg-white  ">Grids</a></h3>
+      <h3><a href="#ui" class="px-2 py-2 rounded color-white hover:bg-white  ">UI Elements</a></h3>
+      <h3><a href="#tables" class="px-2 py-2 rounded color-white hover:bg-white  ">Tables</a></h3>
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-1 p-6 space-y-16">
+    <main class="flex-1 p-6 space-y-8">
+
+      <!-- Tailwind Section -->
+      <section id="tailwind" class="fade-in p-6 bg-white/40 rounded shadow">
+        <h3 class="font-bold mb-4">What is Tailwind?</h3>
+        <p class="text-lg mb-2">
+          Tailwind CSS is a design system framework for developers.
+          Instead of inventing custom styles every time, it provides a predefined set of design tokens (colors, spacing, typography, borders, shadows, etc.) that can be combined to build any UI.
+        </p>
+      </section>
 
       <!-- Intro Section -->
       <section id="intro" class="fade-in p-6 bg-white/40 rounded shadow">
-        <h1 class="text-4xl font-bold mb-4">What Are Utility Classes?</h1>
+        <h3 class="font-bold mb-4">What Are Utility Classes?</h3>
         <p class="text-lg mb-2">Utility classes in Tailwind CSS are small, single-purpose classes that allow you to control a specific property directly in HTML.</p>
         <p class="text-lg">They help UX & UI designers rapidly build layouts, typography, colors, and spacing without writing custom CSS, keeping your design consistent and maintainable.</p>
       </section>
 
       <!-- Fonts Section -->
       <section id="fonts" class="fade-in p-6 bg-white/40 rounded shadow">
-        <h1 class="montserrat-bold text-3xl mb-4">Fonts</h1>
+        <h3 class="mb-4">Fonts</h3>
         <p class="mb-2">Tailwind provides font families, sizes, weights, and more:</p>
         <div class="grid grid-cols-2 gap-6">
           <div class="space-y-1">
@@ -89,7 +95,7 @@
 
       <!-- Colors Section -->
       <section id="colors" class="fade-in p-6 bg-white/40 rounded shadow">
-        <h1 class="montserrat-bold text-3xl mb-4">Colors</h1>
+        <h3 class="mb-4">Colors</h3>
         <p class="mb-2">Text, background, border, and hover colors are all utility classes:</p>
         <div class="grid grid-cols-2 gap-6">
           <div class="space-y-1">
@@ -109,7 +115,7 @@
 
       <!-- Grids Section -->
       <section id="grids" class="fade-in p-6 bg-white/40 rounded shadow">
-        <h1 class="text-3xl montserrat-bold mb-4">Grids</h1>
+        <h3 class="mb-4">Grids</h3>
         <p class="mb-2">Use Tailwind's grid system for layout:</p>
         <div class="grid grid-cols-2 gap-6">
           <div class="space-y-1">
@@ -128,7 +134,7 @@
 
       <!-- UI Elements Section -->
       <section id="ui" class="fade-in p-6 bg-white/40 rounded shadow">
-        <h1 class="montserrat-bold text-3xl mb-4">UI Elements</h1>
+        <h3 class="mb-4">UI Elements</h3>
         <p class="mb-2">Buttons, cards, alerts, and more can be styled quickly:</p>
         <div class="grid grid-cols-2 gap-6">
           <div class="space-y-2">
@@ -147,7 +153,7 @@
 
       <!-- Tables Section -->
       <section id="tables" class="fade-in p-6 bg-white/40 rounded shadow">
-        <h1 class="montserrat-bold text-3xl mb-4">Tables</h1>
+        <h3 class="mb-4">Tables</h3>
         <p class="mb-2">Tables can be quickly styled with borders, stripes, and responsive scrolling:</p>
         <div class="grid grid-cols-2 gap-6">
           <div class="space-y-1">

@@ -19,6 +19,7 @@ header{
 
 pre{
     overflow: hidden;
+    font-size: .75em;
 }
 
 a{
@@ -52,6 +53,11 @@ h1 {
 }
 h2 {
     font-family: 'Montserrat';
+}
+h3 {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 
